@@ -8,3 +8,6 @@ burger.addEventListener('click',()=>{
   headerTop.classList.toggle('active')
   body.classList.toggle('lock');
 })
+
+
+//Слайдер
