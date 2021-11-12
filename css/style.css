@@ -603,4 +603,85 @@ padding-bottom: 100px;
     }
 }
 /*-------------------------------------------*/
+/*Шоста секція*/
+.gallery {
+  background-color: #886239;
+}
+.gallery__body {
+  padding: 49px 0px 106px 0px;
+}
+.gallery__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 39px;
+}
+.gallery__title {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 130%;
+  color: #FFFFFF;
+}
+.gallery__functional {
+  display: flex;
+  justify-content: space-between;
+}
+.functional__section {
+  font-family: 'Roboto';
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration: underline;
+  color: #FFFFFF;
+  align-self: center;
+}
+.fynctional__control {
+  display: flex;
+  margin-left: 55px;
+}
+.control__prev {
+  border: 1px solid #C4C4C4;
+  border-radius: 50%;
+  padding: 18px;
+}
+.control__next {
+  border: 1px solid #C4C4C4;
+  border-radius: 50%;
+  padding: 18px;
+  margin-left: 16px;
+}
+.gallery__items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(352px,1fr));
+  gap: 32px;
+}
+.gallery__item {
+  position: relative;
+  padding: 0 0 70% 0;
+}
+.gallery__item img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media(max-width:769px){
+  .gallery__body {
+    padding: 40px 0;
+  }
+  .functional__section {
+    display: none;
+  }
+  .gallery__title {
+    font-size: 26px;
+  }
+}
+@media(max-width:480px){
+  .fynctional__control {
+    display: none;
+  }
+}
+/*-------------------------------------------*/
 /*------------------------------------------------------------------------------------*/
