@@ -337,6 +337,9 @@ padding: 0 0 58% 0;
   .direction__list {
     grid-template-columns: repeat(2,1fr);
   }
+  .direction__title {
+    font-size: 26px;
+  }
 }
 @media(max-width:410px) {
   .direction__list {
@@ -347,6 +350,144 @@ padding: 0 0 58% 0;
   }
   .direcrtion__body {
     padding: 20px 0 30px 0;
+  }
+}
+/*-------------------------------------------*/
+/*Третя секція*/
+
+.offers__body {
+  padding: 100px 0px ;
+}
+.offers__title {
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  color: #1F1E1E;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.offers__items {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(4,1fr);
+  margin-bottom: 82px;
+}
+.offers__item {
+  padding: 16px 20px 19px 24px;
+  transition: all 0.3s ease 0s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.offers__item:hover {
+  transform: scale(1.1);
+}
+.item__namibia {
+  background: url('../img/offers/namibia.png')50%/cover no-repeat;
+}
+.item__title {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 130%;
+  color: #FFFFFF;
+}
+.title__little {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 130%;
+  color: #FFFFFF;
+  margin-bottom: 166px;
+}
+.item__price {
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 130%;
+  color: #FFFFFF;
+}
+.item__tanzania {
+  background: url('../img/offers/tanzania.png')50%/cover no-repeat;
+}
+.item__kenia {
+  background: url('../img/offers/kenia.png')50%/cover no-repeat;
+}
+.item__botswana {
+  background: url('../img/offers/botswanna.png')50%/cover no-repeat;
+}
+.item__south {
+  background: url('../img/offers/south-africa.png')50%/cover no-repeat;
+}
+.item__tour {
+  background: url('../img/offers/tour.png')50%/cover no-repeat;
+}
+.item__kayptown {
+  background: url('../img/offers/kayptown.png')50%/cover no-repeat;
+}
+.item__yar {
+  background: url('../img/offers/YAR.png')50%/cover no-repeat;
+}
+.item__zanzibare {
+  background: url('../img/offers/zanzibare.png')50%/cover no-repeat;
+}
+.item__victoria {
+  background: url('../img/offers/victoria-water.png')50%/cover no-repeat;
+}
+.big {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.item__description {
+  font-family: 'Roboto';
+  font-size: 16px;
+  line-height: 130%;
+  color: #FFFFFF;
+}
+.country {
+  margin: 15px 0px;
+  max-width: 85%;
+}
+.horizontal-line{
+  height: 1px;
+  width: 100%;
+  background-color: #D9D9DE;
+}
+@media(max-width:840px){
+  .big {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  .offers__items {
+    grid-template-columns: repeat(3 , 1fr);
+    margin-bottom: 42px;
+  }
+  .item__title{
+    font-size: 14px;
+  }
+  .item__description {
+    display: none;
+  }
+  .offers__body {
+    padding: 40px 0px ;
+  }
+}
+@media(max-width:600px){
+  .offers__items {
+    grid-template-columns: repeat(2 , 1fr);
+  }
+  .offers__title {
+    font-size: 26px;
+    margin-bottom: 25px;
+  }
+}
+@media(max-width:410px) {
+  .offers__items {
+    grid-template-columns: repeat(1 , 1fr);
+  }
+  .item__top {
+    margin-bottom: 166px;
   }
 }
 /*-------------------------------------------*/
