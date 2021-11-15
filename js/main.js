@@ -11,3 +11,15 @@ burger.addEventListener('click',()=>{
 
 
 //Слайдер
+
+let check = document.querySelector('.agreement');
+let agree = document.querySelector('.agree');
+
+agree.addEventListener('click', ()=>{
+  if(check.checked){
+    check.checked = false
+  }else{
+    check.checked = true
+  }
+  agree.classList.toggle('active');
+})
