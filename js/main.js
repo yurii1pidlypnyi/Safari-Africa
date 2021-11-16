@@ -56,4 +56,27 @@ function slider (size){
     })
   }
 }
-//-----------------------
+
+$(document).ready(function(){
+  $('.gallery__slider').slick({
+    arrows: true,
+    appendArrows: $('.fynctional__control'),
+    slidesToShow: 3,
+    infinite: true,
+    rows:2,
+    responsive:[
+      {
+        breakpoint: 512,
+        settings: {
+          slidesToShow: 2
+        },
+      },
+      {
+        breakpoint: 412,
+        settings: {
+          slidesToShow: 1,
+        }
+      },
+    ]
+  });
+});
