@@ -385,9 +385,6 @@ padding: 0 0 58% 0;
   flex-direction: column;
   justify-content: space-between;
 }
-.offers__item:hover {
-  transform: scale(1.1);
-}
 .item__namibia {
   background: url('../img/offers/namibia.png')50%/cover no-repeat;
 }
@@ -466,7 +463,6 @@ padding: 0 0 58% 0;
   }
   .offers__items {
     grid-template-columns: repeat(3 , 1fr);
-    margin-bottom: 42px;
   }
   .item__title{
     font-size: 14px;
@@ -474,27 +470,29 @@ padding: 0 0 58% 0;
   .item__description {
     display: none;
   }
-  .offers__body {
-    padding: 40px 0px ;
+}
+@media(min-width:769px){
+  .offers__item:hover {
+    transform: scale(1.1);
   }
 }
 @media(max-width:769px) {
+  .offers__body {
+    padding: 40px 0px ;
+  }
   .offers__title {
     font-size: 26px;
-    margin-bottom: 25px;
+    margin-bottom: 0px;
   }
-}
-@media(max-width:600px){
   .offers__items {
-    grid-template-columns: repeat(2 , 1fr);
-  }
-}
-@media(max-width:410px) {
-  .offers__items {
-    grid-template-columns: repeat(1 , 1fr);
+    display: block;
+    margin-bottom: 0px;
   }
   .item__top {
     margin-bottom: 166px;
+  }
+  .offers__item {
+  height: 257px;
   }
 }
 /*-------------------------------------------*/
